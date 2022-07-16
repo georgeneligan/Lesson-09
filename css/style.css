@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 1000px;
 }
 
 * {
@@ -86,6 +87,7 @@ main .banner {
   background-image: url(/assets/image/bg.jpg);
   background-color: #cccccc;
   height: 500px;
+  width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,17 +199,20 @@ main section aside div button:hover {
   background-color: #2573da;
 }
 
-main article {
-  height: 100px;
-  margin-top: 100px;
+main .media {
+  position: relative;
+  height: 160px;
+  margin-top: 70px;
+  background-color: #f2f2f2;
 }
 
 main article ul {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   justify-content: center;
   align-items: center;
   padding: 0px;
+  padding-top: 50px;
 }
 
 main article ul li {
@@ -233,4 +238,479 @@ main article ul li.hr {
 .newline {
   width: 90px;
   font-size: 25px;
+}
+
+main section.posts {
+  margin-top: 80px;
+  display: block;
+  width: 940px;
+  height: 100%;
+}
+
+main section.posts div {
+  margin-top: 50px;
+  width: 940px;
+  border: solid 1px #f2f2f2;
+  box-shadow: 1px 1px 5px 1px #f2f2f2;
+}
+
+main section.posts div img {
+  width: 940px;
+}
+
+.fa-user-tie {
+  font-size: 30px;
+  color: #908f8f;
+}
+
+main section.posts div article {
+  position: relative;
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 30px 60px;
+}
+
+main section.posts div article ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+main section.posts div article ul li {
+  font-size: 13px;
+  color: #5c5c5c;
+}
+
+main section.posts .news_container {
+  margin: 0 auto;
+  width: 820px;
+  box-shadow: none;
+  border: none;
+  border-bottom: solid 2px #cccccccb;
+}
+.news_title {
+  font-size: 24px;
+  transition: 0.4s;
+}
+.news_title:hover {
+  color: #2573da;
+}
+.news_about {
+  font-size: 16px;
+  font-weight: 100;
+  transition: 0.4s;
+}
+
+.news_about:hover {
+  color: #2573da;
+}
+.news_title,
+.news_about {
+  cursor: pointer;
+  color: #555555;
+  font-family: sans-serif;
+}
+
+main section.posts div ul {
+  display: flex;
+  gap: 10px;
+}
+
+main section.posts div ul i {
+  padding: 0px 10px;
+  color: #555555;
+}
+
+main section.posts div ul li {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.likes_right {
+  margin-left: 638px;
+}
+
+main section.posts div ul li.likes_right i {
+  color: red;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin: 40px 0px;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer section aside {
+  display: flex;
+  width: 100%;
+  height: 72px;
+  background-color: #2573da;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section aside ul {
+  display: flex;
+  gap: 150px;
+}
+
+footer section aside ul li {
+  display: inline-flex;
+  padding: 0px 15px;
+}
+
+footer section aside ul li a {
+  color: white;
+}
+
+footer section aside ul i {
+  color: white;
+}
+
+footer div.wrapper {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 72px;
+}
+
+footer div .card1 {
+  background-image: url(/assets/image/card1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+}
+
+footer div .card2 {
+  background-image: url(/assets/image/card2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+}
+
+footer div .card3 {
+  background-image: url(/assets/image/card3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+}
+
+footer div .card4 {
+  background-image: url(/assets/image/card4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+}
+
+footer div .card5 {
+  background-image: url(/assets/image/card5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+}
+
+.info {
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 25px;
+  width: 150px;
+  margin: 60px auto;
+  color: white;
+}
+
+.card1:hover {
+  transform: translateY(0px);
+}
+
+.card1:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 2;
+  opacity: 0;
+}
+.card1:hover:before {
+  opacity: 1;
+}
+
+.card1 .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.card1:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card2:hover {
+  transform: translateY(0px);
+}
+
+.card2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 2;
+  opacity: 0;
+}
+.card2:hover:before {
+  opacity: 1;
+}
+
+.card2 .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.card2:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card3:hover {
+  transform: translateY(0px);
+}
+
+.card3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 2;
+  opacity: 0;
+}
+.card3:hover:before {
+  opacity: 1;
+}
+
+.card3 .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.card3:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card4:hover {
+  transform: translateY(0px);
+}
+
+.card4:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 2;
+  opacity: 0;
+}
+.card4:hover:before {
+  opacity: 1;
+}
+
+.card4 .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.card4:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card5:hover {
+  transform: translateY(0px);
+}
+
+.card5:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 2;
+  opacity: 0;
+}
+.card5:hover:before {
+  opacity: 1;
+}
+
+.card5 .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.card5:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.footer_end {
+  background-color: #696969;
+  width: 100%;
+  height: 370px;
+  margin: 380px 0px;
+}
+
+.footer_end section div .footer_left {
+  margin-left: 280px;
+  padding: 55px 0px;
+  width: 500px;
+}
+
+.footer_end section div .footer_left img {
+  width: 140px;
+  height: 140px;
+}
+
+.footer_end section div .footer_left h1 {
+  position: absolute;
+  margin: -145px 0px 0px 170px;
+  font-size: 24px;
+  color: white;
+  font-weight: 100;
+}
+.footer_end section div .footer_left p {
+  position: absolute;
+  margin: -100px 0px 0px 170px;
+  font-size: 15px;
+  color: white;
+  font-weight: 100;
+  width: 360px;
+}
+
+.footer_end section div .footer_left a {
+  position: absolute;
+  margin: 135px 0px 0px 31px;
+  font-size: 15px;
+  color: white;
+  font-weight: 100;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+
+div.footer_end section div aside.footer_left p.proudly {
+  margin: 100px 0px;
+  font-size: 13px;
+}
+
+div.footer_end section aside.footer_right {
+  margin-left: 900px;
+  margin-top: -200px;
+  height: 300px;
+  width: 500px;
+}
+
+div.footer_end section aside.footer_right h1 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+div.footer_end section aside.footer_right h6 {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+div.footer_end section aside.footer_right input {
+  width: 230px;
+  height: 30px;
+  background-color: transparent;
+  border: solid 1px white;
+  outline: none;
+  color: white;
+  padding: 0px 20px;
+  transition: 0.4s;
+}
+
+div.footer_end section aside.footer_right input::placeholder {
+  color: rgb(192, 191, 191);
+}
+
+div.footer_end section aside.footer_right input:hover {
+  box-shadow: 1px 1px 1px 1px white;
+}
+
+div.footer_end section aside.footer_right button {
+  margin-top: 10px;
+  width: 273px;
+  height: 34px;
+  background-color: #2573da;
+  border: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+div.footer_end section aside.footer_right button:hover {
+  background-color: #69a5f3;
+}
+
+div.footer_end section aside.footer_right ul {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-left: -40px;
+}
+
+div.footer_end section aside.footer_right ul i {
+  color: white;
 }
